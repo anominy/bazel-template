@@ -4,6 +4,6 @@
 
 int main()
 {
-    std::cout << message() << std::endl;
+    std::cout << util::message() << std::endl;
     return 0;
 }

@@ -2,7 +2,7 @@
 
 #include <string>
 
-std::string message()
+std::string util::message()
 {
     return "Hey, Cutie! ^^";
 }
