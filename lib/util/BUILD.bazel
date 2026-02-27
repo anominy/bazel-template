@@ -1,0 +1,10 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+cc_library(
+    name = "main",
+    srcs = glob(["src/**/*.cpp"]),
+    hdrs = glob(["src/**/*.hpp"]),
+    strip_include_prefix = "src",
+    include_prefix = "lib/util",
+    visibility = ["//visibility:public"],
+)
