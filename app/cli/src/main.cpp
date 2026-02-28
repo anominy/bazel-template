@@ -1,7 +1,6 @@
 #include <iostream>
 
-#include <lib/util/message.hpp>
-
+#include <util/message.hpp>
 #include <fmt/base.h>
 
 int main()
