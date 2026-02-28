@@ -3,5 +3,11 @@ load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 cc_binary(
     name = "main",
     srcs = glob(["src/**/*.cpp"]),
-    deps = ["//lib/util:main"],
+    deps = [
+        "//lib/util:main",
+        "@fmt//:fmt",
+    ],
+    copts = select({
+        "@platforms//os:windows": ["/utf-8"],
+    }),
 )

@@ -2,8 +2,10 @@
 
 #include <lib/util/message.hpp>
 
+#include <fmt/base.h>
+
 int main()
 {
-    std::cout << util::message() << std::endl;
+    fmt::println(util::message());
     return 0;
 }
